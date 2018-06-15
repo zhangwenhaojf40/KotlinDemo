@@ -30,7 +30,7 @@ class MeFragment : BaseFragment() {
         mRecyclerView.layoutManager=LinearLayoutManager(activity)
         mRecyclerView.adapter=adapter
         adapter.setOnItemClickListener { adapter, view, position ->
-
+            var name=adapter.data.get(position) as String
             Toast.makeText(activity,adapter.data.get(position) as String ,Toast.LENGTH_LONG).show()
         }
 

@@ -1,7 +1,6 @@
 package hao.wen.zhang.kotlindemo.http
 
 import io.reactivex.Observer
-import io.reactivex.disposables.Disposable
 
 
 /**
@@ -15,7 +14,7 @@ abstract class BaseObser<T> : Observer<T> {
     }
 
     override fun onError(e: Throwable) {
-        println(e)
+
     }
 
     abstract override fun onNext(t: T)
